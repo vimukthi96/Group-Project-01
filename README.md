@@ -1,2 +1,2 @@
 # Team-Brogrammers
-ITaid is an android application that is specifically created as a resource to any computer science student.
+ITaid is an android application that is being created by us as a support to any computer science student.
