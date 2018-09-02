@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.atheeshproperty.splashscreentest.R;
+import com.atheeshproperty.itaidapp.R;
 
 public class webDevelopmentBtnActivity extends AppCompatActivity {
 

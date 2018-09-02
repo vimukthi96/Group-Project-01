@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.atheeshproperty.splashscreentest.R;
+import com.atheeshproperty.itaidapp.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(secondintent);
                 break;
 
+                default:
+                    break;
+
         }
+
     }
 }
