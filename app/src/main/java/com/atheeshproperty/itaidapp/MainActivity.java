@@ -17,10 +17,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button btnNavToProgrammingScreen =  findViewById(R.id.btnProgramming);
         Button btnNavToWeb = findViewById(R.id.btnWebDevelopment);
+        Button btnNavToStatistics = findViewById(R.id.btnStatistics);
+        Button btnNavToMathematics = findViewById(R.id.btnMathematics);
 
 
         btnNavToProgrammingScreen.setOnClickListener(this);
         btnNavToWeb.setOnClickListener(this);
+        btnNavToStatistics.setOnClickListener(this);
+        btnNavToMathematics.setOnClickListener(this);
     }
 
     @Override
@@ -28,13 +32,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (view.getId()){
             case R.id.btnProgramming:
-                Intent intent = new Intent(MainActivity.this, programmingBtnActivity.class);
+                Intent intent = new Intent(MainActivity.this,programmingBtnActivity.class);
                 startActivity(intent);
                 break;
 
             case R.id.btnWebDevelopment:
-                Intent secondintent = new Intent(MainActivity.this, webDevelopmentBtnActivity.class);
+                Intent secondintent = new Intent(MainActivity.this,webDevelopmentBtnActivity.class);
                 startActivity(secondintent);
+                break;
+
+            case R.id.btnStatistics:
+                Intent thirdintent = new Intent(MainActivity.this,statisticsBtnActivity.class);
+                startActivity(thirdintent);
+                break;
+
+            case R.id.btnMathematics:
+                Intent fourthintent = new Intent(MainActivity.this,mathematicsBtnActivity.class);
+                startActivity(fourthintent);
                 break;
 
                 default:
