@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.atheeshproperty.itaidapp.MainActivity">
+    tools:context="com.atheeshproperty.itaidapp.MainActivity"
+    android:id="@+id/drawerLayout">
 
     <ScrollView
         android:id="@+id/scrollViewmain"
@@ -22,12 +23,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="5dp">
+
+
+
 
             <Button
                 android:id="@+id/btnProgramming"
@@ -162,7 +165,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="76dp"
                 android:gravity="center"
-                android:layout_marginTop="8dp"
+
                 android:background="@drawable/subjectselectbuttons"
                 android:soundEffectsEnabled="false"
                 android:text="last added"
@@ -177,4 +180,12 @@
         </LinearLayout>
     </ScrollView>
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"/>
+
+
+</android.support.v4.widget.DrawerLayout>
