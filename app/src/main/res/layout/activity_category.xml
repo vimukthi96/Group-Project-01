@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CategoryActivity"
-    android:padding="20dp">
+    android:padding="1dp">
 
     <ScrollView
         android:id="@+id/scrollViewmain"
@@ -141,7 +141,7 @@
                 app:layout_constraintVertical_bias="0.95" />
 
             <Button
-                android:id="@+id/btnlast"
+                android:id="@+id/btnnotyet"
                 android:layout_width="match_parent"
                 android:layout_height="76dp"
                 android:layout_marginBottom="0.2mm"
@@ -149,7 +149,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/subjectselectbuttons"
                 android:soundEffectsEnabled="false"
-                android:text="last added"
+                android:text="Data Structures"
                 android:textAllCaps="false"
                 android:textSize="19sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -158,22 +158,9 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.95" />
 
-            <Button
-                android:id="@+id/btnlastsecond"
-                android:layout_width="match_parent"
-                android:layout_height="76dp"
-                android:gravity="center"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/subjectselectbuttons"
-                android:soundEffectsEnabled="false"
-                android:text="last added"
-                android:textAllCaps="false"
-                android:textSize="19sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.95" />
+
+
+
 
         </LinearLayout>
     </ScrollView>
