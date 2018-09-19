@@ -50,8 +50,8 @@ public class subtitleActivity extends AppCompatActivity {
                 TextView textView = (TextView) view.findViewById(android.R.id.text1);
                 textView.setTextColor(Color.BLACK);
                 textView.setTypeface(textView.getTypeface(), Typeface.BOLD);
-                textView.setGravity(Gravity.CENTER);
-                textView.setPadding(0,10,0,10);
+                textView.setGravity(Gravity.LEFT);
+                textView.setPadding(20,10,0,10);
                // textView.setMinLines(3);
               //  textView.setAllCaps(true);
                 //textView.setTextSize(20);

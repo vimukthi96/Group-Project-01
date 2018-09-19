@@ -19,8 +19,8 @@ public class SplashActivity extends AppCompatActivity {
 
         if(!isNetworkAvailable()){
             AlertDialog.Builder builder =new AlertDialog.Builder(SplashActivity.this);
-            builder.setTitle("ERROR");
-            builder.setMessage("No Internet or WIFI conection..");
+            builder.setTitle("No internet connection");
+            builder.setMessage("Please turn on your network connection to continue.");
 
             builder.setPositiveButton("RETRY", new DialogInterface.OnClickListener() {
                 @Override

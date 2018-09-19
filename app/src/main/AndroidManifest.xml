@@ -26,7 +26,8 @@
         <activity android:name=".CategoryActivity"> </activity>
         <activity android:name=".SubCategoryActivity"></activity>
         <activity android:name=".subtitleActivity"></activity>
-        <activity android:name=".WebViewerActivity"></activity>
+        <activity android:name=".WebViewerActivity"
+            android:theme="@style/AppTheme.NoActionBar"> </activity>
 
     </application>
 

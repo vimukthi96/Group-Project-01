@@ -49,7 +49,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(mContext,mData.get(position), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mContext,mData.get(position), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(mContext,subtitleActivity.class);
                 //Intent intent = new Intent( this,subtitleActivity.class);
                 intent.putExtra("subcategoryValue",mData.get(position));

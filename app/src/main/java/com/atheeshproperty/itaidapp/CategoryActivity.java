@@ -3,11 +3,38 @@ package com.atheeshproperty.itaidapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class CategoryActivity extends AppCompatActivity implements View.OnClickListener {
+
+    boolean doubleBackPressed;
+
+    @Override
+    public void onBackPressed() {
+
+        if(doubleBackPressed){
+            super.onBackPressed();
+        }
+        else{
+            doubleBackPressed=true;
+            final ConstraintLayout coordinatorLayout = (ConstraintLayout) findViewById(R.id.coordinator);
+
+            Toast.makeText(this,"Press back again to exit!",Toast.LENGTH_SHORT).show();
+            new android.os.Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    doubleBackPressed=false;
+                }
+            },2000);
+        }
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
